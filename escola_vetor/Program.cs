@@ -13,6 +13,7 @@ Um aluno é aprovado se a nota for maior ou igual a 6.*/
 
 double[] nota = new double[5];
 int i = 1;
+int j = 0;
 
 
 while (i < 6)
@@ -25,5 +26,11 @@ while (i < 6)
     i++;
 }
 
-Console.WriteLine($"Nota {i} foi {nota[i]}");
 
+while (j < 5)
+{
+
+
+    Console.WriteLine($"Nota {j} foi {nota[i]}");
+
+}
