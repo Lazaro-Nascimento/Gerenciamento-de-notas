@@ -16,7 +16,7 @@ int i = 1;
 int j = 0;
 
 
-while (i < 6)
+while (i < 5)
 {
     Console.WriteLine("Nota do aluno: ");
     nota[i] = Convert.ToDouble(Console.ReadLine());
@@ -25,12 +25,11 @@ while (i < 6)
   
     i++;
 }
+i=1;
 
-
-while (j < 5)
+while (j < 5 && i < 5)
 {
-
-
     Console.WriteLine($"Nota {j} foi {nota[i]}");
-
+    i++;
+    j++;
 }
