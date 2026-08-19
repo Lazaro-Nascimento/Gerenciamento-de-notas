@@ -12,10 +12,12 @@ Um aluno é aprovado se a nota for maior ou igual a 6.*/
 
 
 double[] nota = new double[5];
-int i = 1;
+int i = 0; 
+int a = 0;
 
 
-while (i < 6)
+
+while (i < 5) //laço de repetição de permitir armazenar as notas no vetor
 {
     Console.WriteLine("Nota do aluno: ");
     nota[i] = Convert.ToDouble(Console.ReadLine());
@@ -25,5 +27,25 @@ while (i < 6)
     i++;
 }
 
-Console.WriteLine($"Nota {i} foi {nota[i]}");
 
+
+Console.Write("########## RESULTADO ##########\n");
+//criar outro laço que percorra as notas para ver quem passou
+i= 0; //zero meu laço de repetição i para inicializalo novamente
+while (i < 5)
+{
+    if (nota[i] >= 6)
+    {
+        Console.WriteLine($"Aluno: {i} Aprovado, nota: {nota[i]}");
+        a++;
+    }
+
+    else
+    {
+        Console.WriteLine($"Aluno:{i} Reprovado, nota {nota[i]}");
+    }
+
+    i++;
+}
+
+Console.WriteLine("#######################################3");
